@@ -45,6 +45,8 @@ Bayes Theorem
 
 ## NLP use case
 * Question Answering
+
+
 * Sentiment Analysis
 * Machine Translation
 * Text Summarization (very hard)
