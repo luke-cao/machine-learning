@@ -15,17 +15,17 @@ entity
 
 ---------------------
 
-![information extraction](./imgs/imgs-033/001.png)
+![information extraction](./imgs/imgs_033/001.png)
 
-![information extraction](./imgs/imgs-033/002.png)
+![information extraction](./imgs/imgs_033/002.png)
 
-![information extraction](./imgs/imgs-033/003.png)
+![information extraction](./imgs/imgs_033/003.png)
 
-![information extraction](./imgs/imgs-033/004.png)
+![information extraction](./imgs/imgs_033/004.png)
 
-![information extraction](./imgs/imgs-033/005.png)
+![information extraction](./imgs/imgs_033/005.png)
 
-![information extraction](./imgs/imgs-033/006.png)
+![information extraction](./imgs/imgs_033/006.png)
 
 
 # Ontological Relation
@@ -33,19 +33,19 @@ entity
 ## instance-of
 is-a is similar with instance-of    
 
-![information extraction](./imgs/imgs-033/007.png)
+![information extraction](./imgs/imgs_033/007.png)
 
-![information extraction](./imgs/imgs-033/008.png)
+![information extraction](./imgs/imgs_033/008.png)
 
 ## Relation extraction method
 给予规则，最主流    
 bootstrap and distant supervision is semi-supervised    
 无监督还停留在学术界，工业界还是需要人工标记      
 
-![information extraction](./imgs/imgs-033/009.png)
+![information extraction](./imgs/imgs_033/009.png)
 
 rule-based method   
-![information extraction](./imgs/imgs-033/010.png)
+![information extraction](./imgs/imgs_033/010.png)
 
 supervised method   
 
@@ -53,8 +53,8 @@ feature engineering is very important, we need to define entity set and relation
 
 feature engineering
 
-![information extraction](./imgs/imgs-033/012.png)
+![information extraction](./imgs/imgs_033/012.png)
 
-![information extraction](./imgs/imgs-033/013.png)
+![information extraction](./imgs/imgs_033/013.png)
 
-![information extraction](./imgs/imgs-033/011.png)
+![information extraction](./imgs/imgs_033/011.png)
