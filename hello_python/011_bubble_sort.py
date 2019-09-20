@@ -33,6 +33,6 @@ def bubble_sort2(arr):
     return arr
 
 
-array = [1, 3, 5, 7, 8, 3, 4] * 100
+array = [1, 3, 5, 7, 8, 3, 4]
 print(bubble_sort(array))
 print(bubble_sort2(array))
