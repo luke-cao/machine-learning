@@ -3,9 +3,9 @@ print(data)
 
 
 def flatten_list(alist):
-    ret = []
+    ret = []  # result
     for i in alist:
-        if hasattr(i, '__iter__'):
+        if hasattr(i, '__iter__'):  # iterable have __iter__ method
             ret.extend(flatten_list(i))
         else:
             ret.append(i)
@@ -13,4 +13,3 @@ def flatten_list(alist):
 
 
 print(flatten_list(data))
-

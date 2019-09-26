@@ -24,13 +24,14 @@ if __name__ == '__main__':
     print(c)  # 10
     print(str(c))  # 10
     print(repr(c))  # C(10)
+    print()
 
-    #######
     print('hello')
     print(str('hello'))
     print(repr('hello'))
-    ###########
+
+    print()
     today = datetime.datetime.today()
     print(today)
-    print(today)
+    print(str(today))
     print(repr(today))

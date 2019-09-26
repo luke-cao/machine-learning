@@ -19,9 +19,11 @@ class C:
 
 m1 = np.array([1, 2, 3, 4, 5, 6]).reshape((2, 3))
 m2 = np.array([6, 5, 4, 3, 2, 1]).reshape((3, 2))
-print(m1)
-print(m2)
+print(m1, end='\n\n')
+print(m2, end='\n\n')
 print(m1 @ m2)
+
+print()
 
 c1 = C(m1)
 c2 = C(m2)
