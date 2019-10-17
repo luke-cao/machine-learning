@@ -33,4 +33,4 @@ class Solution:
 
 
 
-print(Solution().majorityElement([2,2,1,1,1,1, 2,2]))
+print(Solution().majorityElement([2,2, 2, 2, 2,2, 2, 1,1,3,3,4, 5]))
