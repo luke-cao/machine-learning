@@ -4,6 +4,11 @@ import numpy as np
 
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
+        """
+        dynamic program
+        :param nums:
+        :return:
+        """
         if len(nums) == 1:
             return nums[0]
         max_ret = nums[0]
