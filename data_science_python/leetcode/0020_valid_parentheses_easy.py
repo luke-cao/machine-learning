@@ -1,5 +1,10 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+        """
+        the parentheses are first in first out
+        :param s:
+        :return:
+        """
         stack = []
         parentheses = {'(': ')', '[': ']', '{': '}'}
         for i in s:

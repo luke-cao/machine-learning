@@ -1,5 +1,6 @@
 import re
 
+
 # class Solution:
 #     def isPalindrome(self, s: str) -> bool:
 #         s = re.sub(r'[^a-zA-Z0-9]+', '', s)
@@ -8,6 +9,12 @@ import re
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
+        """
+        isalnum()
+        linear complexity, no extra memory, ignore case
+        :param s:
+        :return:
+        """
         i, j = 0, len(s) - 1
         while i < j:
             while i < j and not s[i].isalnum():
@@ -19,5 +26,6 @@ class Solution:
             i += 1
             j -= 1
         return True
+
 
 print(Solution().isPalindrome("A man, a plan, a canal: Panama"))
