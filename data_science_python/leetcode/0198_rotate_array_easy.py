@@ -1,5 +1,6 @@
 from typing import List
 
+
 # class Solution:
 #     def rotate(self, nums: List[int], k: int) -> None:
 #         """
@@ -14,11 +15,12 @@ class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
+        % mod
         """
         k %= len(nums)
         nums[k:], nums[:k] = nums[:-k], nums[-k:]
 
 
-mylist = [1,2,3,4,5,6,7]
+mylist = [1, 2, 3, 4, 5, 6, 7]
 print(Solution().rotate(mylist, 3))
 print(mylist)

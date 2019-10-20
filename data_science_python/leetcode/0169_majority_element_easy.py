@@ -21,6 +21,11 @@ from collections import Counter
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
+        """
+        the majority element appears more than half of total number
+        :param nums:
+        :return:
+        """
         index, cnt = 0, 1
         for i in range(1, len(nums)):
             if nums[i] == nums[index]:

@@ -1,5 +1,10 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
+        """
+        maybe there is a cycle
+        :param n:
+        :return:
+        """
         seen = set()
         while n != 1:
             seen.add(n)
