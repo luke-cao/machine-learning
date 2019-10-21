@@ -49,7 +49,28 @@ def stringToTreeNode(input):
     return root
 
 
+def treeNodeToString(root):
+    if not root:
+        return "[]"
+    output = ""
+    queue = [root]
+    current = 0
+    while current != len(queue):
+        node = queue[current]
+        current = current + 1
+
+        if not node:
+            output += "null, "
+            continue
+
+        output += str(node.val) + ", "
+        queue.append(node.left)
+        queue.append(node.right)
+    return "[" + output[:-2] + "]"
+
+
 if __name__ == '__main__':
     tree_list = '[1,2,2,null,3,null,3]'
     root = stringToTreeNode(tree_list)
+    print(treeNodeToString(root))
     print(root.val)
