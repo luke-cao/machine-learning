@@ -1,5 +1,5 @@
 import os
-
+import re
 
 class TreeNode:
     def __init__(self, x):
@@ -69,8 +69,21 @@ def treeNodeToString(root):
     return "[" + output[:-2] + "]"
 
 
+def count_file_num_of_folder(folder):
+    counts = {'Easy': 0, 'Medium': 0, 'Hard': 0, 'Other': 0}
+    for i in os.listdir(folder):
+        if re.search(r'\d+_.*_[a-z]+\.py', i):
+            if i.endswith('easy.py'):
+                counts['Easy'] += 1
+            elif i.endswith('medium.py'):
+                counts['Medium'] += 1
+            elif i.endswith('hard.py'):
+                counts['Hard'] += 1
+            else:
+                counts['Other'] += 1
+    return f'Leedcode Problem Have Been Solved Stats: \n{counts}'
+
+
 if __name__ == '__main__':
-    tree_list = '[1,2,2,null,3,null,3]'
-    root = stringToTreeNode(tree_list)
-    print(treeNodeToString(root))
-    print(root.val)
+    folder = '.'
+    print(count_file_num_of_folder(folder))
