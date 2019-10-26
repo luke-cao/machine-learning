@@ -1,11 +1,17 @@
 import os
 import re
+import json
 
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 
 def change_file_name(folder):
@@ -67,6 +73,25 @@ def treeNodeToString(root):
         queue.append(node.left)
         queue.append(node.right)
     return "[" + output[:-2] + "]"
+
+
+def stringToIntegerList(input):
+    return json.loads(input)
+
+
+def stringToListNode(input):
+    # Generate list from the input
+    numbers = stringToIntegerList(input)
+
+    # Now convert that list into linked list
+    dummyRoot = ListNode(0)
+    ptr = dummyRoot
+    for number in numbers:
+        ptr.next = ListNode(number)
+        ptr = ptr.next
+
+    ptr = dummyRoot.next
+    return ptr
 
 
 def count_file_num_of_folder(folder):
