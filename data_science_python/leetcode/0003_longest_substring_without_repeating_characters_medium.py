@@ -17,4 +17,4 @@ class Solution:
         return max_length
 
 
-print(Solution().lengthOfLongestSubstring("bbtablud"))
+print(Solution().lengthOfLongeubstring("bbtablud"))
