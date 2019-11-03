@@ -106,7 +106,7 @@ def count_file_num_of_folder(folder):
                 counts['Hard'] += 1
             else:
                 counts['Other'] += 1
-    return f'Leedcode Problem Have Been Solved Stats: \n{counts}'
+    return f'Leedcode Problem Have Been Solved Stats: \n{counts}, total {sum(counts.values())}'
 
 
 if __name__ == '__main__':
