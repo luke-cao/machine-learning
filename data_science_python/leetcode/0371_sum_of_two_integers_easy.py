@@ -8,6 +8,6 @@ class Solution:
         return a
 
 
-# print(Solution().getSum(2, 5))
-print(Solution().getSum(-2, 3))
+print(Solution().getSum(5, 5))
+# print(Solution().getSum(-2, 3))
 
