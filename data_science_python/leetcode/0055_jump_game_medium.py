@@ -19,14 +19,17 @@ class Solution:
 # dynamic programming
 class Solution:
     def canJump(self, nums):
-        max_reach, n = 0, len(nums)
-        for i, x in enumerate(nums):
-            if max_reach < i: return False
-            if max_reach >= n - 1: return True
-            max_reach = max(max_reach, i + x)
+        curr_max_length, length = 0, len(nums) - 1
+        for i, v in enumerate(nums):
+            if curr_max_length < i:
+                return False
+            curr_max_length = max(curr_max_length, i + v)
+            if curr_max_length >= length:
+                return True
+        return False
 
 
-input = [2,3,1,1,4]
-# input = [3,2,1,0,4]
+# input = [2,3,1,1,4]
+input = [3,2,1,0,4]
 # input = [0]
 print(Solution().canJump(input))
