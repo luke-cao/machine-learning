@@ -10,3 +10,4 @@ class Solution:
 haystack = "aaaaa"
 needle = "bba"
 print(Solution().strStr(haystack, needle))
+print(haystack.find(needle))
