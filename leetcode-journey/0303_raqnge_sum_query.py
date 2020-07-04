@@ -10,4 +10,4 @@ class NumArray:
 
 # Your NumArray object will be instantiated and called as such:
 # obj = NumArray(nums)
-# param_1 = obj.sumRange(i,j)
+# param_1 = o1qqbj.sumRange(i,j)
